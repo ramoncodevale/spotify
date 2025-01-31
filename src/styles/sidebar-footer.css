@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  font-family: (--font-dm-sans);
 }
 
 .sidebar {
@@ -41,7 +42,6 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  font-family: "DM Sans", sans-serif;
 }
 
 .library {
@@ -90,7 +90,6 @@ body {
 }
 
 .text {
-  font-family: "DM Sans", sans-serif;
   padding-bottom: 14px;
   color: #fff;
 }
@@ -144,41 +143,41 @@ body {
   border-radius: 20px;
 }
 
-footer {
+.disclaimer-premium {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(to right, #6da7f4, #c219e7);
-  padding: 15px 40px;
-  position: fixed;
 }
-
-.container-footer h3 {
-  color: #fff;
-  margin-bottom: 10px;
+.disclaimer-premium .text {
+  flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
-.container-footer p {
-  color: #fff;
-  font-weight: 500;
+.disclaimer-premium .disclaimer-premium__subtitle {
+  color: #ffffff;
   font-size: 14px;
-  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
 
-.button-premium button {
-  width: 180px;
-  color: #000;
-  border-radius: 40px;
+.disclaimer-premium button {
+  background-color: #ffffff;
+  color: #000000;
   font-size: 16px;
   font-weight: bold;
-  padding: 10px;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
   cursor: pointer;
-  margin-top: 12px;
-  border: none;
   flex-shrink: 0;
 }
